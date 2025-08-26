@@ -4,10 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
+    "preview": "vite preview --host",
+    "start": "vite preview --host",
+    "bolt": "npm run build && npm run start",
     "lint": "eslint .",
-    "preview": "vite preview"
+  },
+    "engines": {
+     "node": ">=18.0.0"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
